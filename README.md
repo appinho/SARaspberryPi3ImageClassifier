@@ -6,5 +6,5 @@ Deploy a pre-trained SqueezeNet Neural Network on my Raspberry Pi 3 with OpenCV 
 # Usage [2]
 
 Sources:
-  [1] https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/
-  [2] https://www.pyimagesearch.com/2017/10/02/deep-learning-on-the-raspberry-pi-with-opencv/
+[1] https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/
+[2] https://www.pyimagesearch.com/2017/10/02/deep-learning-on-the-raspberry-pi-with-opencv/
