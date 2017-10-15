@@ -1,4 +1,4 @@
-# GoogleNet
+# SqueezeNet
 Deploy a pre-trained SqueezeNet Neural Network on a Raspberry Pi 3 with OpenCV 3.3.0
 
 # Installation
