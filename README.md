@@ -1,51 +1,25 @@
-# SqueezeNet
-Deploy a pre-trained SqueezeNet Neural Network on my Raspberry Pi 3 with OpenCV 3.3.0
+# GoogleNet
+Deploy a pre-trained SqueezeNet Neural Network on a Raspberry Pi 3 with OpenCV 3.3.0
 
-# Installation [1]
+# Installation
+- Setup Raspbian Stretch Desktop https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+- Setup OpenCV 3.3.0 https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/
 
-# Usage [2]
+# Example
+In Terminal redirect to SqueezeNet directory and try the command:
 
-GOOGLENET
-=========
-$ python pi_deep_learning.py --prototxt models/bvlc_googlenet.prototxt --model models/bvlc_googlenet.caffemodel --labels synset_words.txt --image images/barbershop.png
-[INFO] loading model...
-[INFO] classification took 1.7304 seconds
-[INFO] 1. label: barbershop, probability: 0.70508
-[INFO] 2. label: barber chair, probability: 0.29491
-[INFO] 3. label: restaurant, probability: 2.9732e-06
-[INFO] 4. label: desk, probability: 2.06e-06
-[INFO] 5. label: rocking chair, probability: 1.7565e-06
+$ python squeeze_net_raspi.py --image test_images/drake.jpg
 
+and get as a result following image:
 
-SQUEEZENET
-==========
-$ python pi_deep_learning.py --prototxt models/squeezenet_v1.0.prototxt --model models/squeezenet_v1.0.caffemodel --labels synset_words.txt --image images/barbershop.png 
-[INFO] loading model...
-[INFO] classification took 0.92073 seconds
-[INFO] 1. label: barbershop, probability: 0.80578
-[INFO] 2. label: barber chair, probability: 0.15124
-[INFO] 3. label: half track, probability: 0.0052873
-[INFO] 4. label: restaurant, probability: 0.0040124
-[INFO] 5. label: desktop computer, probability: 0.0033352
+![Screenshot](result_drake.png)
 
-$ python pi_deep_learning.py --prototxt models/squeezenet_v1.0.prototxt --model models/squeezenet_v1.0.caffemodel --labels synset_words.txt --image images/cobra.png 
-[INFO] loading model...
-[INFO] classification took 0.91687 seconds
-[INFO] 1. label: Indian cobra, probability: 0.47972
-[INFO] 2. label: leatherback turtle, probability: 0.16858
-[INFO] 3. label: water snake, probability: 0.10558
-[INFO] 4. label: common iguana, probability: 0.059227
-[INFO] 5. label: sea snake, probability: 0.046393
+plus the print in the terminal of the top 5 estimated output classes with their probabilities:
 
-$ python pi_deep_learning.py --prototxt models/squeezenet_v1.0.prototxt --model models/squeezenet_v1.0.caffemodel --labels synset_words.txt --image images/jellyfish.png 
-[INFO] loading model...
-[INFO] classification took 0.92117 seconds
-[INFO] 1. label: bubble, probability: 0.59491
-[INFO] 2. label: jellyfish, probability: 0.23758
-[INFO] 3. label: Petri dish, probability: 0.13345
-[INFO] 4. label: lemon, probability: 0.012629
-[INFO] 5. label: dough, probability: 0.0025394
-
-Sources:
-[1] https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/
-[2] https://www.pyimagesearch.com/2017/10/02/deep-learning-on-the-raspberry-pi-with-opencv/
+[INFO] loading model...  
+[INFO] classification took 0.4432 seconds  
+[INFO] 1. label: drake, probability: 0.25705  
+[INFO] 2. label: goose, probability: 0.18581  
+[INFO] 3. label: black stork, probability: 0.10414  
+[INFO] 4. label: hornbill, probability: 0.074497  
+[INFO] 5. label: quail, probability: 0.051127  
