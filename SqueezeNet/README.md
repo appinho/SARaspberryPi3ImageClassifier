@@ -1,10 +1,6 @@
 # SqueezeNet
 Deploy a pre-trained SqueezeNet Neural Network on a Raspberry Pi 3 with OpenCV 3.3.0
 
-# Installation
-- Setup Raspbian Stretch Desktop https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
-- Setup OpenCV 3.3.0 https://www.pyimagesearch.com/2017/10/09/optimizing-opencv-on-the-raspberry-pi/
-
 # Example
 In Terminal redirect to SqueezeNet directory and try the command:
 
