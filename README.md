@@ -1,6 +1,6 @@
-Raspberry Pi 3 Image Classification
+SARaspberryPi3ImageClassifier
 =======
-Deep Learning Networks for Image Classification deployed on a Raspberry Pi 3
+Deep Learning Networks for Image Classifier deployed on a Raspberry Pi 3
 
 ### Installation
 - [Raspbian Stretch Desktop](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
